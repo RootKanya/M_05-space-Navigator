@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Space Navigator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <h1>Space Navigator</h1>
+            
+            <div class="input-group">
+                <label>Difficulty (Intelligence)</label>
+                <select id="difficulty">
+                    <option value="easy">Easy (Static Comets)</option>
+                    <option value="medium">Medium (GA Generation)</option>
+                    <option value="hard">Hard (GA + SA Movement)</option>
+                </select>
+            </div>
+
+<div class="input-group">
+    <label>Map Sector</label>
+    <select id="map-style">
+        <option value="map1">Sector Alpha (Map 1)</option>
+        <option value="map2">Sector Beta (Map 2)</option>
+    </select>
+</div>
+
+            <button onclick="startGame()" class="btn-primary">Generate Level</button>
+            
+            <div class="score-board">
+                <h3>Current Run</h3>
+                <p>Time: <span id="timer">0.0</span>s</p>
+                <p>Score: <span id="score">0</span></p>
+            </div>
+
+            <div class="history">
+                <h3>Past Scores</h3>
+                <ul id="score-list"></ul>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <canvas id="gameCanvas" width="600" height="500"></canvas>
+            <div id="loading">Generating Genetic Map...</div>
+        </div>
+    </div>
+
+    <script src="/static/game.js"></script>
+</body>
+</html>

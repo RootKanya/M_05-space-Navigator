@@ -1,0 +1,10 @@
+body { font-family: sans-serif; background: #050510; color: white; display: flex; justify-content: center; height: 100vh; margin: 0; }
+.container { display: flex; gap: 20px; padding: 20px; }
+.controls { width: 250px; background: #111; padding: 20px; border-radius: 8px; }
+.game-area { position: relative; }
+canvas { background: #222; border: 2px solid #555; }
+.input-group { margin-bottom: 15px; }
+select, button { width: 100%; padding: 10px; margin-top: 5px; }
+.btn-primary { background: #00ffff; border: none; font-weight: bold; cursor: pointer; }
+#loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; background: rgba(0,0,0,0.8); padding: 20px; }
+li { font-size: 0.9em; border-bottom: 1px solid #333; padding: 5px 0; }
