@@ -8,7 +8,7 @@ app = Flask(__name__, template_folder='./templates', static_folder='./static')
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return "Space Navigator API is Running! (Use /api/generate-level to fetch data)"
 
 @app.route('/api/generate-level', methods=['POST'])
 def generate_level():

@@ -1,6 +1,7 @@
 import numpy as np
 import random
 import heapq
+from ai_engine import get_grid_and_validate, generate_patrol_path, ROWS, COLS
 from typing import List, Tuple, Dict, Any
 
 ROWS = 11 
